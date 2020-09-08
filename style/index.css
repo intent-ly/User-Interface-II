@@ -1,1 +1,183 @@
-/* Add CSS styling here */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+margin: 0;
+padding: 0;
+border: 0;
+font-size: 100%;
+font: inherit;
+vertical-align: baseline;
+}
+
+*{
+    box-sizing:border-box;
+}
+
+
+html{
+    font-size:62.5%;
+}
+
+body{
+    font-size:1.5rem;
+    font-family: 'Noto Serif', serif;
+}
+
+h1{
+    font-size:8rem;
+    font-family: 'Jockey One', sans-serif;
+    font-style: bolder;
+    color:white;
+}
+h2{
+    font-size:4rem;
+    font-family: 'Jockey One', sans-serif;
+    color:white;
+}
+
+.intro div p{
+    width:70%;
+    color:white;
+    font-size:1.8rem;
+}
+
+header{
+    display:flex;
+    flex-direction: column;
+    text-align:center;
+    padding: 3rem;
+    background-image: url(/assets/blurred.jpg);
+    background-size: 100%;
+    background-position:center;
+}
+
+header nav a{
+    color: white;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 2.3rem;
+    padding:0 2rem;
+    font-family: 'Jockey One', sans-serif;
+}
+
+header h1{
+    margin: 15rem 0;
+}
+
+button{
+    padding:1.2rem;
+    font-family: 'Jockey One', sans-serif;
+    font-size:2rem;
+    width:15rem;
+    margin-bottom:2rem;
+}
+button a{
+    text-decoration:none;
+}
+
+.colored{
+    background-color:#080b0f;
+    display: flex;
+    justify-content: center;
+}
+
+.intro{
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 3rem;
+}
+
+.intro div{
+    width: 80%
+}
+
+.intro img{
+    border-radius: 50%;
+    width: 20%;
+}
+
+.intro div p, .intro div h2{
+    padding-left: 5rem;
+    padding-bottom: 2rem;
+}
+
+.intro div button{
+    margin-left: 5rem;
+}
+
+.photos{
+    display: flex;
+    flex-wrap: wrap;
+    background-image: url(/assets/blurred.jpg);
+    background-position:center;
+    justify-content: center;
+    padding: 20rem 0;
+}
+
+.photos div{
+    display: flex;
+    flex-direction: column;
+    color: white;
+    font-family: 'Jockey One', sans-serif;
+    text-transform: uppercase;
+}
+
+.photos div img{
+    height: 40rem;
+    object-fit: cover;
+    transition: transform .1s;
+}
+
+.photos div img:hover{
+    transform: scale(1.5);
+    box-shadow: black 0 0 20px;
+}
+
+
+
+footer{
+    background-color:#080b0f;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+img{
+    width: 17rem;
+}
+
+footer a img{
+    width:6rem;
+}
+
+@media(max-width:800){
+
+    header{
+        padding:1rem;
+    }
+    
+    header nav{
+        display:flex;
+        font-size:1.7rem;
+    }
+        
+    .intro {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        display: block;
+    }
+}
