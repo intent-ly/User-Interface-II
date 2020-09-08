@@ -26,7 +26,6 @@ vertical-align: baseline;
 
 html{
     font-size:62.5%;
-    
 }
 
 body{
@@ -34,75 +33,45 @@ body{
     font-family: 'Noto Serif', serif;
 }
 
-header{
-    background-color: #a6a8ab;
-    padding:1rem;
-}
-
-header nav{
-    display:flex;
-    font-family: 'Jockey One', sans-serif;
-    font-style: bolder;
-    font-size:2.1rem;
-    color:black;
-
-}
-    
-nav a{
-    text-decoration:none;
-    border:.18rem solid #424242;
-    color:black;
-    background-color: white;
-    padding:0 2rem;
-    margin:0 -.11rem;
-}
-
-
 h1{
-    font-size:7rem;
+    font-size:8rem;
     font-family: 'Jockey One', sans-serif;
     font-style: bolder;
     color:white;
 }
 h2{
-    font-size:5rem;
+    font-size:4rem;
     font-family: 'Jockey One', sans-serif;
     color:white;
-}
-
-.intro img{
-    width:30rem;
-    height:30rem;
-    margin:1rem 1rem;
-    object-fit: cover;
-    border-radius: 100%;
-    margin-left:7rem;
-}
-
-.intro{
-    display:flex;
-    background-image: linear-gradient(#616161,#a6a8ab );
-    align-content: center;
-    align-items:stretch;
-    justify-content: space-evenly;
-}
-
-.intro div{
-    display:flex;
-    flex-direction:column;
-    align-items:flex-start;
-    justify-content: flex-end;
-    text-align: left;
-    margin:0 1rem;
-    margin-bottom: 1rem;
-    margin-left: 5rem;
-
 }
 
 .intro div p{
     width:70%;
     color:white;
     font-size:1.8rem;
+}
+
+header{
+    display:flex;
+    flex-direction: column;
+    text-align:center;
+    padding: 3rem;
+    background-image: url(/assets/blurred.jpg);
+    background-size: 100%;
+    background-position:center;
+}
+
+header nav a{
+    color: white;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 2.3rem;
+    padding:0 2rem;
+    font-family: 'Jockey One', sans-serif;
+}
+
+header h1{
+    margin: 15rem 0;
 }
 
 button{
@@ -116,65 +85,99 @@ button a{
     text-decoration:none;
 }
 
-footer{
-    background-color:#a6a8ab;
-    display:flex;
-    flex-direction: column;
-    align-items: center;
+.colored{
+    background-color:#080b0f;
+    display: flex;
+    justify-content: center;
+}
+
+.intro{
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 3rem;
+}
+
+.intro div{
+    width: 80%
+}
+
+.intro img{
+    border-radius: 50%;
+    width: 20%;
+}
+
+.intro div p, .intro div h2{
+    padding-left: 5rem;
+    padding-bottom: 2rem;
+}
+
+.intro div button{
+    margin-left: 5rem;
 }
 
 .photos{
-    display:flex;
-    justify-content: space-evenly;
-    background-color:#a6a8ab;
-    padding:3rem;
+    display: flex;
+    flex-wrap: wrap;
+    background-image: url(/assets/blurred.jpg);
+    background-position:center;
+    justify-content: center;
+    padding: 20rem 0;
 }
 
 .photos div{
-    background-color:white;
     display: flex;
     flex-direction: column;
-    align-items: center;
-    width:auto;
-    border-radius:1rem;
-    box-shadow:.5rem .5rem 6rem black;
+    color: white;
+    font-family: 'Jockey One', sans-serif;
+    text-transform: uppercase;
 }
 
-.photos img{
-    width:20rem;
-    height:20rem;
-    padding:1rem;
-    margin-bottom: 1rem;
+.photos div img{
+    height: 40rem;
     object-fit: cover;
-
+    transition: transform .1s;
 }
 
-.photos2{
+.photos div img:hover{
+    transform: scale(1.5);
+    box-shadow: black 0 0 20px;
+}
+
+
+
+footer{
+    background-color:#080b0f;
     display:flex;
-    justify-content: space-evenly;
-    background-color:#a6a8ab;
-    padding:3rem;
-}
-
-.photos2 div{
-    background-color:white;
-    display: flex;
     flex-direction: column;
     align-items: center;
-    width:auto;
-    border-radius:1rem;
-    box-shadow:.5rem .5rem 6rem black;
 }
 
-.photos2 img{
-    width:20rem;
-    height:20rem;
-    padding:1rem;
-    margin-bottom: 1rem;
-    object-fit: cover;
-
+img{
+    width: 17rem;
 }
 
 footer a img{
     width:6rem;
+}
+
+@media(max-width:800){
+
+    header{
+        padding:1rem;
+    }
+    
+    header nav{
+        display:flex;
+        font-size:1.7rem;
+    }
+        
+    .intro {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        display: block;
+    }
 }
